@@ -1,5 +1,5 @@
 import React from 'react'
-import {ReactComponent as GithubIcon} from '../assets/img/github-1.svg'
+import {ReactComponent as GithubIcon} from 'assets/img/github-1.svg'
 import './styles.css'
 
 export default function index() {
