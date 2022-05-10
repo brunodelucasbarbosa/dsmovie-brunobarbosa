@@ -1,4 +1,4 @@
-import MovieStars from 'components/MovieStars'
+import MovieStars from 'components/MovieScore'
 import Pagination from 'components/Pagination'
 import React from 'react'
 

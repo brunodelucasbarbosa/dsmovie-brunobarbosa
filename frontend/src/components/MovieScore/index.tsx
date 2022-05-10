@@ -1,6 +1,6 @@
 import MovieStars from 'components/MovieStars';
 import React from 'react'
-
+import './styles.css'
 
 function MovieScore() {
 
