@@ -1,7 +1,18 @@
+import MovieScore from 'components/MovieScore';
 import React from 'react'
-import 'style.css'
+import './style.css'
+
 
 function MovieCard() {
+
+  const movie = {
+    id: 1,
+    image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
+    title: "The Witcher",
+    count: 2,
+    score: 4.5
+};
+
   return (
     <div>
     <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />
@@ -14,4 +25,4 @@ function MovieCard() {
   )
 }
 
-export default MovieCard
+export default MovieCard;
