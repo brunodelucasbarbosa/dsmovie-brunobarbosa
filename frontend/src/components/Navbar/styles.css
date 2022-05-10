@@ -10,7 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white!important;
+  color: white;
   list-style: none;
 }
 
@@ -22,6 +22,7 @@ header {
 
 .dsmovie-contact-container {
   display: flex;
+  align-items: center;
 }
 
 .ds-movie-contact-link {
