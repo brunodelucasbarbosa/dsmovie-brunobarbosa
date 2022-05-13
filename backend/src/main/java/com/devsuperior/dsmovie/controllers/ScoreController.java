@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class ScoreController {
 
   @PutMapping("/{id}}")
-  public MovieDTO saveScore(ScoreDTO scoreDTO) {
+  public MovieDTO saveScore(@RequestBody ScoreDTO scoreDTO) {
     return null;
   }
 
