@@ -20,21 +20,21 @@ export default function Listing() {
     numberOfElements: 0,
     empty: true,
   });
-  
+
   useEffect(() => {
     axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}`)
-    .then(response => {
-      const data = response.data as MoviePage;
-      setPage(data)
-    });
+      .then(response => {
+        const data = response.data as MoviePage;
+        setPage(data)
+      });
   }, [pageNumber]);
-  
+
 
 
 
   return (
     <>
-      <Pagination />
+      <Pagination page={page} />
       <div className="container">
         <div className="row">
           {page.content.map(movie => {
@@ -44,8 +44,6 @@ export default function Listing() {
               </div>
             )
           })}
-          
-
         </div>
       </div>
     </>
