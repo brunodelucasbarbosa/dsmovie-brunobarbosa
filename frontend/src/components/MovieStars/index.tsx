@@ -31,13 +31,18 @@ function getFills(score: number) {
 }
 
 function Star({fill} : StarProps) {
-
+  if (fill === 0) {
+    return <StarEmpty />
+  } else if (fill === 1) {
+    return <StarFull />
+  } else {
+    return <StarHalf />
+  } 
 }
 
-export default function index({ score } : Props) {
+export default function MovieStars({ score } : Props) {
 
   const fills = getFills(score);
-
 
   return (
     <div className="dsmovie-stars-container">
