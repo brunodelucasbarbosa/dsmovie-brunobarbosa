@@ -39,7 +39,7 @@ export default function Listing() {
         <div className="row">
           {page.content.map(movie => {
             return (
-              <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+              <div className="col-sm-6 col-lg-4 col-xl-3 mb-3" key={movie.id}>
                 <MovieCard movie={movie} />
               </div>
             )
